@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculator {
+    width: 375px;
+    height: 812px;
+    background-color: #111;
+    color: #fff;
+    display: grid;
+    grid-template-rows: 0.2fr 0.8fr;
+}
+
+.display {
+    background-color: #202122;
+    display: flex;
+    flex-direction: column;
+}
+
+.display * {
+    height: 50%;
+    border: none;
+    background: none;
+    outline: none;
+    text-align: right;
+    color: white;
+    font-size: 30px;
+    padding-right: 10px;
+}
+
+
+/* Pad Section */
+
+#pad {
+    display: grid;
+    grid-template-columns: 0.8fr 0.2fr;
+}
+
+
+/* Number Pad */
+
+.number-pad {
+    background: linear-gradient(225deg, red 10%, 30%, #68228B 90%);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.number-pad * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.number-pad *:hover {
+    background-color: rgba(0, 0, 0, 0.292);
+}
+
+
+/* End Number pad style */
+
+
+/* Operator pad */
+
+.operator-pad {
+    background-color: #343435;
+    display: grid;
+}
+
+.operator-pad * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+
+.operator-pad *:hover {
+    background-color: #29292b;
+}
+
+
+/* End Operator pad style */
+
+.orange-bar {
+    background-color: #ee8d1e;
+}
